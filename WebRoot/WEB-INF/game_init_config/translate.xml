@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translates> 
+	<translate id="1" content="数据异常！" />
+	<translate id="2" content="钻石不足！"/>
+	<translate id="3" content="已经领取过奖励了！"/>
+</translates>
