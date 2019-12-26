@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:websocket="http://www.springframework.org/schema/websocket"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/websocket
+	http://www.springframework.org/schema/websocket/spring-websocket.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/data/mongo       
+	http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd   
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/cache
+	http://www.springframework.org/schema/cache/spring-cache.xsd
+	http://activemq.apache.org/schema/core 
+	http://activemq.apache.org/schema/core/activemq-core.xsd
+	http://www.springframework.org/schema/jms 
+	http://www.springframework.org/schema/jms/spring-jms.xsd
+	http://www.springframework.org/schema/util
+	http://www.springframework.org/schema/util/spring-util.xsd
+	http://www.springframework.org/schema/websocket
+	http://www.springframework.org/schema/websocket/spring-websocket-4.0.xsd
+    ">
+    <bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="false">
+		<property name="locations">
+			<list>
+				<value>/WEB-INF/spring_config/game.properties</value>
+			</list>
+		</property>
+	</bean>
+<!-- 
+http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+    http://www.springframework.org/schema/tx 
+    http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+    http://www.springframework.org/schema/websocket
+    http://www.springframework.org/schema/websocket/spring-websocket.xsd
+
+
+ -->
+	<!--bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" 
+		p:location="/WEB-INF/jdbc.properties" /> <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" 
+		p:driverClassName="${jdbc.driverClassName}" p:url="${jdbc.url}" p:username="${jdbc.username}" 
+		p:password="${jdbc.password}" / -->
+
+	<!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
+
+<!--	<import resource="springConfig/springHibernate.xml"></import>-->
+<!--	<import resource="springConfig/DAO.xml"></import>-->
+<!--	<import resource="springConfig/bean.xml"></import>-->
+<!--	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		p:location="/WEB-INF/config/dbConnection.properties"
+		p:ignoreUnresolvablePlaceholders="true">
+
+	</bean>-->
+<!--        <bean id="handler1" class="com.milanosoft.RCS.web.webSocket.handler.SystemWebSocketHandler" ></bean>-->
+
+	<!-- Multiple Language Support -->
+<!--	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="globalMessages" />
+	</bean>-->
+
+	<!-- 上传文件解析器 -->
+<!--	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="10000000" />
+	</bean>-->
+
+	<!-- Freemarker配置 -->
+<!--	<bean id="freemarkerConfig"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/view/" />
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="template_update_delay">0</prop>
+				<prop key="default_encoding">UTF-8</prop>
+				<prop key="number_format">0.##########</prop>
+				<prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+				<prop key="classic_compatible">true</prop>
+				<prop key="template_exception_handler">ignore</prop>
+			</props>
+		</property>
+	</bean>-->
+	 <bean id="game" class="web.game.common.Game" init-method="init">
+	 </bean>
+	  <bean id="game2" class="web.game.common.Game2" init-method="init">
+	 </bean>
+	 <bean id="websocket" class="web.game.common.handler.InfoSocketEndPoint"/>
+	 <bean id="myHandler" class="web.game.common.handler.SystemWebSocketHandler" init-method="init">
+	 	  <property name="server" value="${webgame.server}"></property>
+	 </bean>
+    <websocket:handlers allowed-origins="*">
+        <websocket:mapping path="/websck" handler="myHandler"/>
+        <websocket:handshake-interceptors>
+            <ref bean="myHandlerShakeInceptor"/>
+        </websocket:handshake-interceptors>
+    </websocket:handlers>
+    <bean id="myHandlerShakeInceptor" class="web.game.common.handler.HandshakeInterceptor"/>
+   	<websocket:handlers allowed-origins="*">
+                <websocket:mapping path="/sockjs/websck/info" handler="myHandler"/>
+                <websocket:handshake-interceptors>
+                    <ref bean="myHandlerShakeInceptor"/>
+                </websocket:handshake-interceptors>
+                <websocket:sockjs />
+     </websocket:handlers>  
+	<!-- <bean id="userstestMapper" class="web.webSocket.mapper">
+	</bean> -->
+	
+	 <import resource="websocket_manager.xml"/>
+	 <import resource="spring-mybatis.xml"/>
+	 <import resource="dao_mybatis.xml"/>
+	 <import resource="websocket_logic.xml"/>
+   	 <import resource="websocket_controller.xml"/>
+    
+
+
+
+</beans>

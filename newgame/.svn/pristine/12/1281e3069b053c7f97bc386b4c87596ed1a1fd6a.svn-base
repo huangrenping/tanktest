@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skins>
+  <skin id="1001" name="1级坦克" track="lz6" armor="zj0.png" battery="pt0.png" trackX="44" trackY="50" armorX="57" armorY="47" batteryX="0" batteryY="5" roundX="39.5" roundY="66"/>
+  <skin id="1002" name="2级坦克" track="lz6" armor="zj1.png" battery="pt1.png" trackX="0" trackY="0" armorX="55" armorY="42.5" batteryX="0" batteryY="5" roundX="55.5" roundY="71"/>
+  <skin id="1003" name="3级坦克" track="lz6" armor="zj2.png" battery="pt2.png" trackX="0" trackY="0" armorX="53.5" armorY="41" batteryX="0" batteryY="2" roundX="39" roundY="62"/>
+  <skin id="1004" name="4级坦克" track="lz6" armor="zj3.png" battery="pt3.png" trackX="0" trackY="0" armorX="56" armorY="45" batteryX="0" batteryY="-2" roundX="39" roundY="62"/>
+  <skin id="1005" name="5级坦克" track="lz3" armor="zj4.png" battery="pt4.png" trackX="35" trackY="31.5" armorX="49" armorY="30" batteryX="0" batteryY="13" roundX="39" roundY="61"/>
+  <skin id="1006" name="6级坦克" track="lz3" armor="zj5.png" battery="pt5.png" trackX="0" trackY="0" armorX="52" armorY="50" batteryX="0" batteryY="13" roundX="49" roundY="65"/>
+  <skin id="1007" name="7级坦克" track="lz3" armor="zj6.png" battery="pt6.png" trackX="0" trackY="0" armorX="48.5" armorY="41.5" batteryX="0" batteryY="18" roundX="50" roundY="62.5"/>
+  <skin id="1008" name="8级坦克" track="lz3" armor="zj7.png" battery="pt7.png" trackX="35" trackY="31.5" armorX="56.5" armorY="44" batteryX="0" batteryY="0" roundX="56.5" roundY="65.5"/>
+  <skin id="1009" name="9级坦克" track="lz4" armor="zj8.png" battery="pt8.png" trackX="40.5" trackY="58.5" armorX="46" armorY="44" batteryX="0" batteryY="0" roundX="39" roundY="69.5"/>
+  <skin id="1010" name="10级坦克" track="lz4" armor="zj9.png" battery="pt9.png" trackX="40.5" trackY="58.5" armorX="48.5" armorY="36" batteryX="0" batteryY="0" roundX="37.5" roundY="58"/>
+  <skin id="1011" name="11级坦克" track="lz4" armor="zj10.png" battery="pt10.png" trackX="0" trackY="0" armorX="52.5" armorY="45" batteryX="0" batteryY="4" roundX="39" roundY="71"/>
+  <skin id="1012" name="12级坦克" track="lz4" armor="zj11.png" battery="pt11.png" trackX="0" trackY="0" armorX="55.5" armorY="46" batteryX="0" batteryY="2" roundX="45" roundY="74"/>
+  <skin id="1013" name="13级坦克" track="lz1" armor="zj12.png" battery="pt12.png" trackX="34" trackY="31" armorX="42.5" armorY="27.5" batteryX="0" batteryY="14" roundX="36" roundY="75"/>
+  <skin id="1014" name="14级坦克" track="lz1" armor="zj13.png" battery="pt13.png" trackX="0" trackY="0" armorX="42.5" armorY="29.5" batteryX="0" batteryY="18" roundX="48.5" roundY="73.5"/>
+  <skin id="1015" name="15级坦克" track="lz9" armor="zj14.png" battery="pt14.png" trackX="47" trackY="56.5" armorX="41" armorY="46.5" batteryX="0" batteryY="-6" roundX="46" roundY="74"/>
+  <skin id="1016" name="16级坦克" track="lz9" armor="zj15.png" battery="pt15.png" trackX="0" trackY="0" armorX="49" armorY="45" batteryX="0" batteryY="-1" roundX="52" roundY="80"/>
+  <skin id="1017" name="17级坦克" track="lz5" armor="zj16.png" battery="pt16.png" trackX="40.5" trackY="60.5" armorX="50" armorY="46" batteryX="0" batteryY="-4" roundX="69.5" roundY="59"/>
+  <skin id="1018" name="18级坦克" track="lz5" armor="zj17.png" battery="pt17.png" trackX="0" trackY="0" armorX="50" armorY="46" batteryX="0" batteryY="-2" roundX="70" roundY="65"/>
+  <skin id="1019" name="19级坦克" track="lz5" armor="zj18.png" battery="pt18.png" trackX="0" trackY="0" armorX="50" armorY="46" batteryX="0" batteryY="-5" roundX="80" roundY="63"/>
+  <skin id="1020" name="20级坦克" track="lz5" armor="zj19.png" battery="pt19.png" trackX="0" trackY="0" armorX="50" armorY="46" batteryX="0" batteryY="1" roundX="72.5" roundY="67"/>
+  <skin id="1021" name="21级坦克" track="lz4" armor="zj20.png" battery="pt20.png" trackX="40.5" trackY="58.5" armorX="46.5" armorY="53" batteryX="0" batteryY="2" roundX="49.5" roundY="65"/>
+  <skin id="1022" name="22级坦克" track="lz4" armor="zj21.png" battery="pt21.png" trackX="0" trackY="0" armorX="52.5" armorY="55" batteryX="0" batteryY="-2" roundX="48.5" roundY="63.5"/>
+  <skin id="1023" name="23级坦克" track="lz4" armor="zj22.png" battery="pt22.png" trackX="0" trackY="0" armorX="53" armorY="55.5" batteryX="0" batteryY="4" roundX="56" roundY="73.5"/>
+  <skin id="1024" name="24级坦克" track="lz3" armor="zj23.png" battery="pt23.png" trackX="35" trackY="31.5" armorX="48" armorY="27" batteryX="0" batteryY="19" roundX="32.5" roundY="64"/>
+  <skin id="1025" name="25级坦克" track="lz3" armor="zj24.png" battery="pt24.png" trackX="0" trackY="0" armorX="49" armorY="30" batteryX="0" batteryY="27" roundX="38.5" roundY="69.5"/>
+  <skin id="1026" name="26级坦克" track="lz8" armor="zj25.png" battery="pt25.png" trackX="42.5" trackY="64" armorX="51.5" armorY="44" batteryX="0" batteryY="-16" roundX="39" roundY="59.5"/>
+  <skin id="1027" name="27级坦克" track="lz8" armor="zj26.png" battery="pt26.png" trackX="0" trackY="0" armorX="50" armorY="42.5" batteryX="0" batteryY="-5" roundX="57" roundY="65"/>
+  <skin id="1028" name="28级坦克" track="lz8" armor="zj27.png" battery="pt27.png" trackX="0" trackY="0" armorX="49.5" armorY="46" batteryX="0" batteryY="-4" roundX="53" roundY="72"/>
+  <skin id="1029" name="29级坦克" track="lz8" armor="zj28.png" battery="pt28.png" trackX="0" trackY="0" armorX="49.5" armorY="46" batteryX="0" batteryY="-4" roundX="49" roundY="65"/>
+  <skin id="1030" name="30级坦克" track="lz7" armor="zj29.png" battery="pt29.png" trackX="47" trackY="64" armorX="55.5" armorY="35" batteryX="0" batteryY="-7" roundX="62" roundY="66"/>
+  <skin id="1031" name="31级坦克" track="lz7" armor="zj30.png" battery="pt30.png" trackX="0" trackY="0" armorX="55.5" armorY="35" batteryX="0" batteryY="-2" roundX="60" roundY="64.5"/>
+  <skin id="1032" name="32级坦克" track="lz7" armor="zj31.png" battery="pt31.png" trackX="0" trackY="0" armorX="55.5" armorY="39" batteryX="0" batteryY="-6" roundX="58.5" roundY="69"/>
+  <skin id="1033" name="33级坦克" track="lz7" armor="zj32.png" battery="pt32.png" trackX="0" trackY="0" armorX="52.5" armorY="38" batteryX="0" batteryY="-5" roundX="59.5" roundY="80"/>
+  <skin id="1034" name="34级坦克" track="lz7" armor="zj33.png" battery="pt33.png" trackX="0" trackY="0" armorX="52.5" armorY="38" batteryX="0" batteryY="-7" roundX="59.5" roundY="77"/>
+  <skin id="1035" name="35级坦克" track="lz8" armor="zj34.png" battery="pt34.png" trackX="42.5" trackY="64" armorX="49.5" armorY="45" batteryX="0" batteryY="-8" roundX="35" roundY="57"/>
+  <skin id="1036" name="36级坦克" track="lz8" armor="zj35.png" battery="pt35.png" trackX="0" trackY="0" armorX="49.5" armorY="45" batteryX="0" batteryY="-10" roundX="43" roundY="57.5"/>
+  <skin id="1037" name="37级坦克" track="lz8" armor="zj36.png" battery="pt36.png" trackX="0" trackY="0" armorX="50" armorY="48" batteryX="0" batteryY="-7" roundX="44.5" roundY="57"/>
+  <skin id="1038" name="38级坦克" track="lz8" armor="zj37.png" battery="pt37.png" trackX="0" trackY="0" armorX="52" armorY="48" batteryX="0" batteryY="-13" roundX="45.5" roundY="57.5"/>
+  <skin id="1039" name="39级坦克" track="lz8" armor="zj38.png" battery="pt38.png" trackX="0" trackY="0" armorX="53" armorY="49.5" batteryX="0" batteryY="-8" roundX="49" roundY="59.5"/>
+  <skin id="1040" name="40级坦克" track="lz8" armor="zj39.png" battery="pt39.png" trackX="0" trackY="0" armorX="53" armorY="49.5" batteryX="0" batteryY="-9" roundX="49" roundY="59.5"/>
+</skins>

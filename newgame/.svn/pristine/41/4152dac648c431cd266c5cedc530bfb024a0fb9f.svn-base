@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+	<task id="1" name="完成10次合成" num="10" reward="1000002:2" add="" addexperience="" description="" factory="FriendFactory" args="" paixu="10" />
+	<task id="2" name="使用攻击加速" num="1" reward="1000002:2" add="" addexperience="" description="" factory="FriendFactory" args="" paixu="20" />
+	<task id="3" name="使用空中支援" num="1" reward="1000002:2" add="" addexperience="" description="" factory="FriendFactory" args="" paixu="30" />
+	<task id="4" name="击败500个敌人" num="500" reward="1000002:2" add="" addexperience="" description="" factory="FriendFactory" args="" paixu="40" />
+</tasks>
