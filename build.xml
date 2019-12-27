@@ -23,6 +23,17 @@
 	<property name="name" value="webgame" />
 	<property name="com" value="newgame" />
 
+
+
+
+
+
+
+
+
+
+
+
 	<property name="version" value="1.0.0" />
 	<tstamp>
 		<format property="date" pattern="yyyy-MM-dd HH:mm" />
