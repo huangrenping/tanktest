@@ -122,9 +122,9 @@
 		<!-- put everything in ${build} into the airinbox-mud.jar file-->
 		<jar jarfile="${lib}/${com}-${name}-${version}.jar"
 			basedir="${build}" />
-		<copy file="${lib}/${com}-${name}-${version}.jar"
+		<!--<copy file="${lib}/${com}-${name}-${version}.jar"
 					tofile="H:/apache-tomcat-7.0.82-windows-x64/apache-tomcat-7.0.82/webapps/newgame/WEB-INF/lib/${com}-${name}-${version}.jar"
-					overwrite="true" />
+					overwrite="true" />-->
 		<!--<jar jarfile="D:/newresin/resin-4.0.41/webapps/webgame/WEB-INF/${lib}/${com}-${name}-${version}.jar"
 					basedir="${build}" />-->
 	</target>
